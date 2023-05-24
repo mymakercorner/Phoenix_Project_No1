@@ -1,0 +1,19 @@
+(footprint "Mousebite4_nohole" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 -1.35 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.1)))
+    (tstamp ac8000c0-06c0-4509-bed8-8be988e1293b)
+  )
+  (fp_text value "Mousebite4_nohole" (at 0.05 1.65 unlocked) (layer "F.Fab") hide
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+    (tstamp 255ca416-83ee-4810-868b-9eebbf6e3d20)
+  )
+  (fp_text user "${REFERENCE}" (at 0 -1.35 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp c39aa88c-80de-4610-bd86-fe4bd8b93bc5)
+  )
+  (fp_arc (start 1.75 0.75) (mid 2.042893 0.042893) (end 2.75 -0.25) (layer "Edge.Cuts") (width 0.1) (tstamp 7c8396c7-7ed0-4d14-b81c-7439ae42ac2b))
+  (fp_arc (start -2 -0.25) (mid -1.292894 0.042894) (end -1 0.75) (layer "Edge.Cuts") (width 0.1) (tstamp c04da406-1b11-484e-9cce-63ef5ed07b51))
+)

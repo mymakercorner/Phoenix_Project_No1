@@ -1,0 +1,21 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid ab4abae5-e13a-4eb7-964f-2a781ddc194e)
+
+  (paper "A4")
+
+  (title_block
+    (title "Phoenix Project No 1 Half Plate")
+    (date "2023-05-07")
+    (rev "2")
+    (comment 1 "Designed with love by Rico")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

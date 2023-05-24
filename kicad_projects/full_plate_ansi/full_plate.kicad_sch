@@ -1,0 +1,21 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid b3f1dcdb-4195-4803-9dac-6bb94fd18bda)
+
+  (paper "A4")
+
+  (title_block
+    (title "Phoenix Project No 1 Full Plate")
+    (date "2023-05-07")
+    (rev "2")
+    (comment 1 "Deisgned with love by Rico")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
