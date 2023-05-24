@@ -15,7 +15,7 @@ After all, we've already seen open source projects revive old legendary keyboard
 ## Licence
 
 This project is using the permissive [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA)](https://creativecommons.org/licenses/by-sa/4.0/) licence.  
-This licence will allow you to use this project, even commercially, as long as you give credit to project creator (Rico of mymakercorner) and publish under the same licence the modifications you may make.
+This licence will allow you to use this project, even commercially, as long as you give credit to the project creator (me, Rico of mymakercorner) and publish under the same licence the modifications you may make.
 ### 3D models
 
 One 3D model file has been taken from SnapEDA website.  
@@ -91,7 +91,7 @@ For the moment full and half plates are available for ANSI layouts with the foll
 * **typeS** *(kicad 6.x project for the Phoenix Project No 1 Type S PCB)* 
 * **typeH** *(kicad 6.x project for the Phoenix Project No 1 Type H PCB)*
 * **full_plate_ansi** *(kicad 6.x project for the full plate PCB)*
-* **half_plate_ansi** *(kicad 6.x project for the full plate PCB)*
+* **half_plate_ansi** *(kicad 6.x project for the half plate PCB)*
 ### qmk_vial_firmware_binary
 * **phoenix_project_no1_vial.uf2** *(QMK/VIAL firmware binary for both Type S and Type H PCBs)* 
 
