@@ -115,7 +115,7 @@ For the moment full and half plates are available for ANSI layouts with the foll
 
 ### Send PCB for manufacturing/assembly at JLCPCB
 
-SOON!!!
+Please find information on how to order fully assembled Type H or Type S PCBs [here](JLCPCB_ordering.md)
 
 ### Reset and flashing procedures
 

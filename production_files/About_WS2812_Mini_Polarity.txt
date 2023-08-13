@@ -1,0 +1,16 @@
+
+This is specific polarity information to correctly place WS2812 mini leds onto the PCB.
+Those leds are designed in the BOM as D1 to D16.
+
+Please be aware that the triangle cutout of the WS2812 mini led is not indicating pin 1, but pin 3 of the chip.
+The WS2812 mini footprint indicates pin 1 on the silkscreen with a dot, diametrically opposite of pin 3 indicated by the triangle cutout.
+
+See schema below for a visual explanation: 
+
+        -------------
+o  1 __ |           | __  4
+        |           |
+        |          /|
+   2 __ |         / | __  3
+        |        /  |
+        -------------
