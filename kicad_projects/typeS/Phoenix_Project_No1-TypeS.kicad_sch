@@ -6,8 +6,8 @@
 
   (title_block
     (title "Phoenix Project No 1 - Type S")
-    (date "2023-05-07")
-    (rev "2")
+    (date "2024-07-13")
+    (rev "2.1")
     (comment 1 "Designed with love by Rico")
   )
 
@@ -4251,7 +4251,7 @@
     (property "Value" "Phoenix_Projet_TypeS_Rev2_Back" (id 1) (at 202.565 269.8749 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "mymakercorner:The_Phoenix_Project_No1_TypeS_Rev2_Logo" (id 2) (at 200.025 268.605 0)
+    (property "Footprint" "mymakercorner:The_Phoenix_Project_No1_TypeS_Rev2_1_Logo" (id 2) (at 200.025 268.605 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 200.025 268.605 0)
@@ -4302,7 +4302,7 @@
     (property "Value" "Phoenix_Projet_TypeS_Rev2_Front" (id 1) (at 202.565 263.5249 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "mymakercorner:The_Phoenix_Project_No1_TypeS_Rev2_Logo" (id 2) (at 200.025 262.255 0)
+    (property "Footprint" "mymakercorner:The_Phoenix_Project_No1_TypeS_Rev2_1_Logo" (id 2) (at 200.025 262.255 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 200.025 262.255 0)
@@ -6204,10 +6204,10 @@
       (reference "FID4") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1mm_Mask2mm")
     )
     (path "/77e9c9e6-4e9a-435e-b8b5-389d514213e0"
-      (reference "H1") (unit 1) (value "Phoenix_Projet_TypeS_Rev2_Front") (footprint "mymakercorner:The_Phoenix_Project_No1_TypeS_Rev2_Logo")
+      (reference "H1") (unit 1) (value "Phoenix_Projet_TypeS_Rev2_Front") (footprint "mymakercorner:The_Phoenix_Project_No1_TypeS_Rev2_1_Logo")
     )
     (path "/74665f50-fc4e-4807-bd95-689e28b8585c"
-      (reference "H2") (unit 1) (value "Phoenix_Projet_TypeS_Rev2_Back") (footprint "mymakercorner:The_Phoenix_Project_No1_TypeS_Rev2_Logo")
+      (reference "H2") (unit 1) (value "Phoenix_Projet_TypeS_Rev2_Back") (footprint "mymakercorner:The_Phoenix_Project_No1_TypeS_Rev2_1_Logo")
     )
     (path "/5fa9667e-006a-4108-aa96-ff067b1783a5"
       (reference "H3") (unit 1) (value "M65A_Text_Front") (footprint "mymakercorner:M65-A_Replacement_Logo")

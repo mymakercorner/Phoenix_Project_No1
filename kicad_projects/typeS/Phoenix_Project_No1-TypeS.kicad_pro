@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.09999999999999999,
@@ -104,20 +105,65 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.19999999999999998,
+        "min_connection": 0.0,
         "min_copper_edge_clearance": 0.19999999999999998,
         "min_hole_clearance": 0.35,
         "min_hole_to_hole": 0.39999999999999997,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.19999999999999998,
+        "min_text_height": 0.7999999999999999,
+        "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.3,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
+      "teardrop_options": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 5,
+          "td_on_pad_in_zone": false,
+          "td_onpadsmd": true,
+          "td_onroundshapesonly": false,
+          "td_ontrackend": false,
+          "td_onviapad": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
       "track_widths": [
         0.0,
         0.2,
@@ -136,7 +182,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -384,13 +431,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power",
-        "nets": [
-          "+1V1",
-          "+5V",
-          "/VBUS",
-          "GND",
-          "GNDPWR"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
@@ -408,131 +449,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Signal",
-        "nets": [
-          "/QSPI_SD0",
-          "/QSPI_SD1",
-          "/QSPI_SD2",
-          "/QSPI_SD3",
-          "/QSPI_SS",
-          "/RUN",
-          "/SWCLK",
-          "/SWIO",
-          "/XIN",
-          "/XOUT",
-          "/~{QSPI_SCLK}",
-          "COL0",
-          "COL1",
-          "COL10",
-          "COL11",
-          "COL12",
-          "COL13",
-          "COL14",
-          "COL15",
-          "COL2",
-          "COL3",
-          "COL4",
-          "COL5",
-          "COL6",
-          "COL7",
-          "COL8",
-          "COL9",
-          "Net-(C16-Pad2)",
-          "Net-(D1-Pad2)",
-          "Net-(D10-Pad2)",
-          "Net-(D10-Pad4)",
-          "Net-(D11-Pad2)",
-          "Net-(D12-Pad2)",
-          "Net-(D13-Pad2)",
-          "Net-(D14-Pad2)",
-          "Net-(D15-Pad2)",
-          "Net-(D17-Pad2)",
-          "Net-(D18-Pad2)",
-          "Net-(D19-Pad2)",
-          "Net-(D2-Pad2)",
-          "Net-(D20-Pad2)",
-          "Net-(D21-Pad2)",
-          "Net-(D22-Pad2)",
-          "Net-(D23-Pad2)",
-          "Net-(D25-Pad2)",
-          "Net-(D26-Pad2)",
-          "Net-(D27-Pad2)",
-          "Net-(D28-Pad2)",
-          "Net-(D29-Pad2)",
-          "Net-(D3-Pad2)",
-          "Net-(D30-Pad2)",
-          "Net-(D31-Pad2)",
-          "Net-(D32-Pad2)",
-          "Net-(D33-Pad2)",
-          "Net-(D34-Pad2)",
-          "Net-(D35-Pad2)",
-          "Net-(D36-Pad2)",
-          "Net-(D37-Pad2)",
-          "Net-(D38-Pad2)",
-          "Net-(D39-Pad2)",
-          "Net-(D4-Pad2)",
-          "Net-(D40-Pad2)",
-          "Net-(D41-Pad2)",
-          "Net-(D42-Pad2)",
-          "Net-(D43-Pad2)",
-          "Net-(D44-Pad2)",
-          "Net-(D45-Pad2)",
-          "Net-(D47-Pad2)",
-          "Net-(D48-Pad2)",
-          "Net-(D49-Pad2)",
-          "Net-(D5-Pad2)",
-          "Net-(D50-Pad2)",
-          "Net-(D51-Pad2)",
-          "Net-(D52-Pad2)",
-          "Net-(D53-Pad2)",
-          "Net-(D54-Pad2)",
-          "Net-(D55-Pad2)",
-          "Net-(D56-Pad2)",
-          "Net-(D57-Pad2)",
-          "Net-(D58-Pad2)",
-          "Net-(D59-Pad2)",
-          "Net-(D6-Pad2)",
-          "Net-(D60-Pad2)",
-          "Net-(D61-Pad2)",
-          "Net-(D62-Pad2)",
-          "Net-(D63-Pad2)",
-          "Net-(D64-Pad2)",
-          "Net-(D65-Pad2)",
-          "Net-(D66-Pad2)",
-          "Net-(D67-Pad2)",
-          "Net-(D68-Pad2)",
-          "Net-(D69-Pad2)",
-          "Net-(D7-Pad2)",
-          "Net-(D70-Pad2)",
-          "Net-(D71-Pad2)",
-          "Net-(D72-Pad2)",
-          "Net-(D74-Pad2)",
-          "Net-(D75-Pad2)",
-          "Net-(D76-Pad2)",
-          "Net-(D77-Pad2)",
-          "Net-(D78-Pad2)",
-          "Net-(D79-Pad2)",
-          "Net-(D8-Pad2)",
-          "Net-(D80-Pad2)",
-          "Net-(D81-Pad2)",
-          "Net-(D82-Pad2)",
-          "Net-(D83-Pad2)",
-          "Net-(D84-Pad2)",
-          "Net-(R7-Pad2)",
-          "RGB_IN",
-          "RGB_OUT",
-          "ROW0",
-          "ROW1",
-          "ROW2",
-          "ROW3",
-          "ROW4",
-          "unconnected-(D16-Pad2)",
-          "unconnected-(J1-Pad4)",
-          "unconnected-(U1-Pad4)",
-          "unconnected-(U3-Pad28)",
-          "unconnected-(U3-Pad29)",
-          "unconnected-(U3-Pad32)",
-          "unconnected-(U3-Pad34)"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
@@ -544,7 +461,522 @@
     "meta": {
       "version": 2
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "+1V1"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/VBUS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GNDPWR"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/QSPI_SD0"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/QSPI_SD1"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/QSPI_SD2"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/QSPI_SD3"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/QSPI_SS"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/RUN"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/SWCLK"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/SWIO"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/XIN"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/XOUT"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "/~{QSPI_SCLK}"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL0"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL1"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL10"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL11"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL12"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL13"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL14"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL15"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL2"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL3"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL4"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL5"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL6"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL7"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL8"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "COL9"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(C16-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D1-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D10-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D10-Pad4)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D11-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D12-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D13-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D14-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D15-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D17-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D18-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D19-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D2-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D20-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D21-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D22-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D23-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D25-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D26-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D27-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D28-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D29-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D3-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D30-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D31-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D32-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D33-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D34-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D35-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D36-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D37-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D38-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D39-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D4-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D40-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D41-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D42-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D43-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D44-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D45-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D47-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D48-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D49-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D5-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D50-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D51-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D52-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D53-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D54-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D55-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D56-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D57-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D58-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D59-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D6-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D60-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D61-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D62-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D63-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D64-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D65-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D66-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D67-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D68-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D69-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D7-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D70-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D71-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D72-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D74-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D75-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D76-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D77-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D78-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D79-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D8-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D80-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D81-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D82-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D83-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(D84-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "Net-(R7-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "RGB_IN"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "RGB_OUT"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "ROW0"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "ROW1"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "ROW2"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "ROW3"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "ROW4"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "unconnected-(D16-Pad2)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "unconnected-(J1-Pad4)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "unconnected-(U1-Pad4)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "unconnected-(U3-Pad28)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "unconnected-(U3-Pad29)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "unconnected-(U3-Pad32)"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "unconnected-(U3-Pad34)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
